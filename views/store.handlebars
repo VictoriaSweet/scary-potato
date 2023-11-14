@@ -1,0 +1,54 @@
+<div class="container">
+  <header>
+    <nav>
+      <div class="nav-container">
+        <img
+          id="nav-logo"
+          src="/images/PlantSitter-logo.png"
+          alt="Plant Sitter logo"
+        />
+        <div class="nav-items">
+          <a class="nav-link" href="/profile">Profile</a>
+          <a class="nav-link" href="/shop">Shop</a>
+          <a class="nav-link" href="/">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<div class="user-info">
+  <div class="user-details">
+    <p>{{username}}</p>
+    <img src="/images/PlantCoin.png" class="coin-img" />
+    <p>{{userPoints}}</p>
+  </div>
+</div>
+
+<div class="shop-container">
+  <div class="shop-items">
+    {{#each plantItems as |item|}}
+      <div class="shop-item">
+        <div class="item-card">
+          <img src="/images/plants/{{item.id}}.png" alt="{{item.name}}" />
+          <div class="card-body">
+            <h5>{{item.name}}</h5>
+            <p>Price:
+              <img src="/images/PlantCoin.png" class="coin-img" />
+              {{item.price}}</p>
+            <p>Category: {{item.category}}</p>
+            <p class="rarity">Rarity: {{item.rarity}}</p>
+            <button
+              class="purchase-btn"
+              data-item-id="{{item.id}}"
+            >Purchase</button>
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <p>No items available.</p>
+    {{/each}}
+  </div>
+</div>
+
+<script src="/public/js/store.js"></script>

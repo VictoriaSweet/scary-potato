@@ -1,0 +1,56 @@
+<img class="logo" src="{{logoUrl}}" alt="{{logoAltText}}" />
+
+<div class="container">
+  <div class="login-form-container">
+    <form action="{{formAction}}" method="post">
+      <h2>Login to Your Account</h2>
+
+      {{#if errorMessage}}
+        <div class="error-message">
+          {{errorMessage}}
+        </div>
+      {{/if}}
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" id="rememberMe" name="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+      </div>
+
+      <div class="form-group">
+        <a href="{{forgotPasswordUrl}}">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="signUp-link">
+      Don't have an account?
+      <a href="{{signUpUrl}}">Sign up</a>
+    </div>
+
+    <button class="social-login-btn google">Login with Google</button>
+    <button class="social-login-btn facebook">Login with Facebook</button>
+  </div>
+</div>
+
+<script src="/public/js/login.js"></script>
