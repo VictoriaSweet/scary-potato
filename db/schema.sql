@@ -11,5 +11,5 @@ CREATE TABLE plants (
     cycle VARCHAR(30) NOT NULL,
     watering VARCHAR(30) NOT NULL,
     sunlight VARCHAR(30) NOT NULL,
-    indoor BOOLEAN NOT NULL,
+    indoor BOOLEAN NOT NULL
 );
