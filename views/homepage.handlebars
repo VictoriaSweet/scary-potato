@@ -1,27 +1,33 @@
-{{! user friendly sign-up page }}
 
-<div class="signUp-container">
-  <h1>Welcome to Our App!</h1>
-  <p>Join us and enjoy these amazing features:</p>
+<section class="signUp-container">
+  <header>
+    <h1>Welcome to Our App!</h1>
+    <p>Join us and enjoy these amazing features:</p>
+  </header>
+  
   <ul>
     <li>Feature 1</li>
     <li>Feature 2</li>
     <li>Feature 3</li>
     <!-- Add more features as needed -->
   </ul>
+
   <form action="/signUp" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required />
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required />
-    <input type="submit" value="Sign Up" />
+  {{!-- groups related controls together --}}
+    <fieldset>   
+      {{!-- for the caption used legend --}}
+      <legend>Sign Up Information</legend>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+    </fieldset>
+    <button type="submit">Sign Up</button>
   </form>
-</div>
+</section>
 
-<script src="/public/js/homepage.js">
-
-</script>
+<script src="/public/js/homepage.js"></script>
 
 {{!-- loading spinner? error handling? --}}
