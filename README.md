@@ -5,7 +5,7 @@ This is an informative application that allows users to identify houseplants and
 - Proper sun exposure
 - Watering needs
 - If the plant is poisonous
-- If the plant is edible
+- If thIde plant is edible
 - Plant life cycle
 - Indoor or outdoor
 
