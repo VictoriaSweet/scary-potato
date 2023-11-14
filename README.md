@@ -1,7 +1,13 @@
-# Go Fish Application
+# Plant Sitter Application
 
 ## Project Description
-This is a fun-filled application for the card game "Go Fish", exhibited through using a card API and session storage as well as user input. Users names and high scores will be stored.
+This is an informative application that allows users to identify houseplants and implement basic care, considering the following: 
+- Proper sun exposure
+- Watering needs
+- If the plant is poisonous
+- If the plant is edible
+- Plant life cycle
+- Indoor or outdoor
 
 ## Table of Contents
 
