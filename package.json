@@ -1,7 +1,7 @@
 {
   "name": "scary-potato",
   "version": "1.0.0",
-  "description": "## Project Description This is a fun-filled application for the card game \"Go Fish\", exhibited through using a card API and session storage as well as user input. Users names and high scores will be stored.",
+  "description": "## informative plant app that will keep track of .",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
