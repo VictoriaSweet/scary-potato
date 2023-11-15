@@ -1,0 +1,52 @@
+<section class="profile-container">
+  <header>
+    <h1>{{username}}'s Profile</h1>
+    <figure>
+      <img src="{{avatarUrl}}" alt="{{username}}'s avatar" />
+      <figcaption>
+        <p>Experience Level: {{experienceLevel}}</p>
+        <p>Number of Plants Cared: {{numPlantsCared}}</p>
+        <p>Rating: {{rating}}</p>
+      </figcaption>
+    </figure>
+  </header>
+
+  <section>
+    <h2>Current Plant Care</h2>
+    {{#if currentPlant}}
+      <p>{{currentPlant.name}}</p>
+      <button>Mark Care Complete</button>
+      <button>Remove Plant</button>
+    {{else}}
+      <p>No current plant care</p>
+    {{/if}}
+  </section>
+
+  <section>
+    <h2>Add New Plant Care</h2>
+    <form action="{{addPlantCareAction}}" method="post">
+      <input type="text" name="plantName" placeholder="Plant name" />
+      <input type="number" name="careTime" placeholder="Time to complete care" />
+      <button type="submit">Add Plant Care</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Plant Cares</h2>
+    {{#each plantCares}}
+      <article>
+        <p>{{this.name}}</p>
+        <button>Remove Plant Care</button>
+      </article>
+    {{/each}}
+  </section>
+
+  <section>
+    <h2>Tools Inventory</h2>
+    {{#each tools}}
+      <article>
+        <img src="{{this.imageUrl}}" alt="{{this.name}}" />
+        <p>{{this.name}}</p>
+      </article>
+    {{/each}}
+  </section>

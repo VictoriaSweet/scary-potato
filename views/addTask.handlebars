@@ -1,0 +1,31 @@
+{{! incase we use a form that needs a drop down menu with a input }}
+
+<form action="/tasks" method="POST">
+  <fieldset>
+    <legend>Add New Task</legend>
+    <label for="taskCategory">Category:</label>
+    <select id="taskCategory" name="category" onchange="updateInputTitle(this)">
+      <option value="" disabled selected>Select Category</option>
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <!-- Add more categories as needed -->
+    </select>
+
+    <label for="titleInput">Task Title:</label>
+    <input
+      type="text"
+      id="titleInput"
+      name="title"
+      placeholder="Task Title"
+      onclick="clearPlaceholder(this)"
+      required
+    />
+
+    <label for="description">Task Description:</label>
+    <input type="text" id="description" name="description" placeholder="Task Description" required />
+  </fieldset>
+
+  <button type="submit">Add Task</button>
+</form>
+
+<script src="/public/js/addTask.js"></script>

@@ -1,0 +1,33 @@
+<form action="/login" method="post">
+  <fieldset>
+    <legend>Login Information</legend>
+    <label>
+      Username:
+      <input type="text" name="username" placeholder="Enter your username" required />
+    </label>
+
+    <label>
+      Password:
+      <input type="password" name="password" placeholder="Enter your password" required />
+    </label>
+
+    <label>
+      <input type="checkbox" id="rememberMe" name="rememberMe" />
+      Remember me
+    </label>
+  </fieldset>
+
+  <a href="{{forgotPasswordUrl}}">Forgot password?</a>
+
+  <button type="submit">Login</button>
+
+  <div>
+    Don't have an account?
+    <a href="{{signUpUrl}}">Sign up</a>
+  </div>
+
+  <button data-platform="google">Login with Google</button>
+  <button data-platform="facebook">Login with Facebook</button>
+</form>
+
+<script src="/public/js/login.js"></script>
