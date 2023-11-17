@@ -10,7 +10,7 @@ Plant Sitter is your go-to app for all things houseplants! Identify your leafy f
 - 🥗 Find out if it's edible
 - 🔄 Learn about the plant's life cycle
 - 🏠 Decide if it's best for indoors or outdoors
-
+ 
 ## 📚 Contents
 
 - [Getting Started](#getting-started)
