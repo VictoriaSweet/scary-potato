@@ -6,23 +6,31 @@ document.querySelectorAll(".purchase-btn").forEach((btn) => {
 });
 
 function purchase(itemId) {
-  // Your purchase logic here
-  // For example, you could make an AJAX request to your server to purchase the item
-  fetch(`/api/purchase/${itemId}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((response) => response.json())
+  makePurchase(itemId)
     .then((data) => {
       if (data.success) {
-        alert("Purchase successful!");
+        // Handle success
       } else {
-        alert("Purchase failed: " + data.error);
+        // Handle failure
       }
     })
     .catch((error) => {
       console.error("Error:", error);
+    });
+}
+
+function makePurchase(itemId) {
+  return fetch(`/api/purchase/${itemId}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    credentials: "include", // adds cookies
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+      return response.json();
     });
 }
