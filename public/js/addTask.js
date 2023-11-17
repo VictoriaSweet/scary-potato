@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   const taskCategory = document.getElementById("taskCategory");
   const titleInput = document.getElementById("titleInput");
 

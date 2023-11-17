@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector(".login-form-container form");
 
   loginForm.addEventListener("submit", function (event) {
