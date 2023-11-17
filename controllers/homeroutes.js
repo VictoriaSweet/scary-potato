@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
   try {
     // Get all plants and JOIN with user data
     const plantData = await Plant.findAll({
-        attributes: ['id', 'plant_name', 'edible', 'poisonous', 'cycle', 'watering, sunlight', 'indoor'],
+        attributes: ['id', 'plant_name', 'edible', 'poisonous', 'cycle', 'watering', 'sunlight', 'indoor'],
       include: [
         {
             model: User,
