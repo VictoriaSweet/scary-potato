@@ -1,14 +1,14 @@
-<form action="/login" method="post">
+<form action="/api/users/login" method="post" class="login-form">
   <fieldset>
     <legend>Login Information</legend>
     <label>
       Username:
-      <input type="text" name="username" placeholder="Enter your username" required />
+      <input type="text" name="username" placeholder="Enter your username" id="username" required />
     </label>
 <br />
     <label>
       Password:
-      <input type="password" name="password" placeholder="Enter your password" required />
+      <input type="password" name="password" placeholder="Enter your password" id="password-login" required />
     </label>
 <br />
     <label>
@@ -21,7 +21,7 @@
 
   <button type="submit" class="btn btn-success py-1 ">Login</button>
 
-  <div>
+  <div class="signup-form">
     Don't have an account?
     <a href="{{signUpUrl}}">Sign up</a>
   </div>
@@ -30,4 +30,4 @@
   <button data-platform="facebook" class="btn btn-success mt-1 mx-1 mb-3">Login with Facebook</button>
 </form>
 
-<script src="/public/js/login.js"></script>
+<script src="/js/login.js"></script>

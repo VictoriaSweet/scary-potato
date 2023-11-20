@@ -1,0 +1,11 @@
+[
+  {
+    "plant_name": "Europoean Silver Fir",
+    "edible": false,
+    "poisonous": false,
+    "cycle": "Perrennial",
+    "watering": "Frequent",
+    "sunlight": "Part shade",
+    "indoor": false
+  }
+]
