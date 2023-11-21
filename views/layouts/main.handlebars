@@ -25,11 +25,13 @@
             <div class="nav navbar-nav navbar-right">
                 <div class="form-group">
                     <div class="input-group align-items-center">
-                        <div class="input-group-prepend mt-3 mx-1">
-                            <span class="input-group-text bg-secondary"><i
-                                    class="fa fa-search text-white p-1"></i></span>
-                            <input type="text" class="form-control" placeholder="Search...">
-                        </div>
+                        <form id="search-form" action="/search" method="post">
+                            <div class="input-group-prepend mt-3 mx-1">
+                                <span class="input-group-text bg-secondary"><i
+                                        class="fa fa-search text-white p-1"></i></span>
+                                <input type="text" class="form-control" placeholder="Input Plant Search" name="q">
+                            </div>
+                        </form>
                         <div class="input-group-apend">
                             {{#if logged_in}}
                             <a href="/">Home</a>
@@ -45,7 +47,7 @@
             </div>
         </div>
     </nav>
- 
+
 
 
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -90,8 +92,9 @@
     </div>
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
-    <script src="controllers/api/plantAPI.js"></script>
     {{/if}}
+
+    <script src="/js/searchbar.js"></script>
 </body>
 
 </html>
