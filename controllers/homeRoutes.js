@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
   try {
     // Get all plants and JOIN with user data
     const plantData = await Plant.findAll({
-        attributes: ['id', 'plant_name', 'edible', 'poisonous', 'cycle', 'watering, sunlight', 'indoor'],
+        attributes: ['id', 'plant_name', 'edible', 'poisonous', 'cycle', 'watering', 'sunlight', 'indoor'],
       include: [
         {
             model: User,
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      posts, 
+      plants, 
       logged_in: req.session.logged_in,
       username: req.session.username,
       user_id: req.session.user_id
