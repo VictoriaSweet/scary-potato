@@ -16,6 +16,7 @@
     <!-- Add more features as needed -->
   </ul>
 
+  {{#unless logged_in}}
   <form class="signup-form">
   {{!-- groups related controls together --}}
     <fieldset>   
@@ -37,6 +38,7 @@
     </fieldset>
     <button type="submit" class="btn btn-success mt-2 mb-3">Sign Up</button>
   </form>
+  {{/unless}}
 </section>
 
 <script src="/js/homepage.js"></script>
