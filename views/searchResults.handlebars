@@ -1,17 +1,9 @@
-<pre>{{plants}}</pre>
+{{#each plants }}
 <div class="plant-card">
     <div class="plant-card-header">
-        {{plant_name}}
+        {{common_name}}
     </div>
     <div class="card-body">
-        <p>
-            Edible:
-            {{edible}}
-        </p>
-        <p>
-            Poisonous:
-            {{poisonous}}
-        </p>
         <p>
             Life cycle:
             {{cycle}}
@@ -24,10 +16,9 @@
             Sunlight Needs:
             {{sunlight}}
         </p>
-        <p>
-            Indoor plant:
-            {{indoor}}
-        </p>
-
+        {{#default_image}}
+        <img src="{{thumbnail}}" />
+        {{/default_image}}
     </div>
 </div>
+{{/each}}
