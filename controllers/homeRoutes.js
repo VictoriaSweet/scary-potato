@@ -87,11 +87,32 @@ router.get("/signup", async (req, res) => {
 // Search
 router.post("/search", async (req, res) => {
   // TODO: calls /api/plant/species-list with q
+  const requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
 
-  // TODO: render search results after getting that response
-  res.render("searchResults", {
-    plant_name: "plant name"
-  });
+  const host = req.headers.host;
+  const q = req.body.q;
+
+  const apiUrl = `http://${host}/api/plant/species-list/${q}`;
+  const url = new URL(apiUrl);
+
+
+
+
+  try {
+    const response = await fetch(url, requestOptions);
+    const results = await response.json();
+
+    // TODO: render search results after getting that response
+    res.render("searchResults", {
+      plants: results
+    });
+  } catch (error) {
+    console.log('error', error);
+  }
+
 });
 
 module.exports = router;
