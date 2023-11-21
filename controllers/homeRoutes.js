@@ -3,6 +3,7 @@ const { Plant, User } = require("../models");
 const sequelize = require("../config/connection");
 const withAuth = require("../utils/auth");
 
+
 // GET all plants
 router.get("/", async (req, res) => {
   try {
@@ -81,6 +82,16 @@ router.get("/login", (req, res) => {
 // Signup
 router.get("/signup", async (req, res) => {
   res.render("signup");
+});
+
+// Search
+router.post("/search", async (req, res) => {
+  // TODO: calls /api/plant/species-list with q
+
+  // TODO: render search results after getting that response
+  res.render("searchResults", {
+    plant_name: "plant name"
+  });
 });
 
 module.exports = router;
