@@ -14,6 +14,19 @@
   border: solid black 15px;
 }
 
+
+#carouselIndicators {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+#carouselIndicators .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+=======
 .container-container-fluid mt-5 {
   border: solid black 15px;
 }
