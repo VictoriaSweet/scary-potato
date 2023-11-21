@@ -1,8 +1,8 @@
 function retrievePlantInfo(x, y) {
     const common_name = getElementById('common_name');
     const other_name  = getElementById('other_name');
-    const cycle = getElementById('cycle') y;
-    const url = `ttps://perenual.com/api/species-list?key=sk-l9HY654e6939256ac2895`;
+    const cycle = getElementById('cycle');
+    const url = `https://perenual.com/api/species-list?key=sk-l9HY654e6939256ac2895`};
 
 const fetchSpeciesList = async (sunlight, watering, poisonous, edible, cycle, indoor) => {
     const requestOptions = {
@@ -27,7 +27,7 @@ const fetchSpeciesList = async (sunlight, watering, poisonous, edible, cycle, in
   };
   fetchSpeciesList('full_sun', 'frequent', 1, 1, 'annual', 1);
 
-  mport fetch from "node-fetch";
+  import fetch from "node-fetch";
 import readline from "readline";
 const baseURL = "https://perenual.com/api/species-list";
 const apiKey = process.env.API_KEY;
