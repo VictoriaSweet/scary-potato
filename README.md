@@ -1,15 +1,13 @@
-# 🌱 Plant Sitter: Your Personal Plant Care Guide
+# 🌱 Plant Parenthood: The free application to support the needs of your growing plants from any sprouts of life. 
 
 ## 🌼 About
 
-Plant Sitter is your go-to app for all things houseplants! Identify your leafy friends, learn about their needs, and become the best plant parent you can be. Here's what you can do with Plant Sitter:
+Plant Parenthood is the application to help the those who are new to the hobby or just maybe even a weekend plant sitter or award winning growers. Nothing to make the novice grower anxious, just the basic facts to the plant. 
 
 - 🌞 Understand the right amount of sunlight
 - 💧 Figure out the watering schedule
-- ☠️ Know if the plant is poisonous
-- 🥗 Find out if it's edible
 - 🔄 Learn about the plant's life cycle
-- 🏠 Decide if it's best for indoors or outdoors
+
  
 ## 📚 Contents
 
@@ -21,7 +19,7 @@ Plant Sitter is your go-to app for all things houseplants! Identify your leafy f
 
 ## 🚀 Getting Started
 
-To get Plant Sitter up and running on your local machine, do the following:
+To get Plant Parenthood up and running on your local machine, do the following:
 
 1. Clone the repo
 2. Run `npm install` to get all the dependencies
@@ -38,7 +36,7 @@ Here's how you can make the most of Plant Sitter:
 
 ## 👥 Meet the Team
 
-Plant Sitter is brought to you by:
+Plant Parenthood is brought to you by:
 
 - Victoria Sweet
 - Matthew Dewease
