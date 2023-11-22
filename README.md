@@ -2,7 +2,7 @@
 
 ## 🌼 About
 
-Plant Parenthood is the application to help the those who are new to the hobby or just maybe even a weekend plant sitter or award winning growers. Nothing to make the novice grower anxious, just the basic facts to the plant. 
+Plant Parenthood is the application to help the those who are new to the hobby or just maybe even a weekend plantsitter  or award winning growers. Nothing to make the novice grower anxious, just the basic facts to the plant. 
 
 - 🌞 Understand the right amount of sunlight
 - 💧 Figure out the watering schedule
@@ -27,7 +27,7 @@ To get Plant Parenthood up and running on your local machine, do the following:
 
 ## 📖 How to Use
 
-Here's how you can make the most of Plant Sitter:
+Here's how you can make the most of Plant Parenthood:
 
 1. Launch the app
 2. Sign in or create a new account
