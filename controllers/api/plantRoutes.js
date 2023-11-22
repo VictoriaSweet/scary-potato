@@ -23,7 +23,7 @@ const fetchSpeciesList = async (q, sunlight, watering, poisonous, edible, cycle,
     redirect: 'follow'
   };
 
-  const API_KEY = 'sk-l9HY654e6939256ac2895'; // Replace with your actual API key
+  const API_KEY = 'sk-ZD8U655d52de723ba3065'; // Replace with your actual API key
   const apiUrl = `https://perenual.com/api/species-list?key=${API_KEY}`;
   const url = new URL(apiUrl);
 
