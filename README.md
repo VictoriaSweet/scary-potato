@@ -52,6 +52,20 @@ Plant Parenthood is brought to you by:
 
 Feel free to reach out to any of our developers
 
+## Screenshots 
+
+- Homepage 
+
+![Screen Shot 2023-11-21 at 6 52 57 PM](https://github.com/VictoriaSweet/scary-potato/assets/90078824/0bb66f5d-42dd-459f-98f4-87d5b2a10ed3)
+
+- Implemented search
+
+![Screen Shot 2023-11-21 at 6 47 09 PM](https://github.com/VictoriaSweet/scary-potato/assets/90078824/a1c27ab9-6883-44d2-86eb-35614cdedace)
+
+## Deployed Project 
+
+- Heroku [link](https://nameless-wave-14504-8d3cae4aaa8e.herokuapp.com/)
+
 ## Resources and Tools
 
 https://perenual.com/docs/api
